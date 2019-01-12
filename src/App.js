@@ -1,28 +1,53 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-class App extends Component {
+import { Image, View, Text, StyleSheet } from 'react-native';
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <View style={styles.app}>
+        <View style={styles.appHeader}>
+          <Text style={styles.appTitle}>Welcome!</Text>
+        </View>
+        <View style={styles.appBody}>
+          <Image
+            accessibilityLabel="Douglas Lowder"
+            style={styles.images}
+            resizeMode="contain"
+            source={{
+              uri: 'http://www.douglowder.com/images/douglaslowder.png'
+            }}
+          />
+          <Text style={styles.appIntro}>
+            Mobile app developer and Irish traditional musician
+          </Text>
+        </View>
+      </View>
     );
   }
 }
-
-export default App;
+const styles = StyleSheet.create({
+  app: {
+    flex: 1
+  },
+  appHeader: {
+    flex: 1,
+    backgroundColor: '#00496c',
+    padding: 20,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  appTitle: {
+    fontSize: 16,
+    color: 'white'
+  },
+  appBody: {
+    backgroundColor: '#eaeaea'
+  },
+  appIntro: {
+    flex: 2,
+    fontSize: 30,
+    textAlign: 'center'
+  },
+  images: {
+    height: 200
+  }
+});
