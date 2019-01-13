@@ -26,10 +26,11 @@ export default class App extends Component {
 }
 const styles = StyleSheet.create({
   app: {
-    flex: 1
+    flex: 1,
+    minHeight: 1000
   },
   appHeader: {
-    flex: 1,
+    height: 100,
     backgroundColor: '#00496c',
     padding: 20,
     justifyContent: 'center',
@@ -40,7 +41,8 @@ const styles = StyleSheet.create({
     color: 'white'
   },
   appBody: {
-    backgroundColor: '#eaeaea'
+    backgroundColor: '#eaeaea',
+    flex: 1
   },
   appIntro: {
     flex: 2,
