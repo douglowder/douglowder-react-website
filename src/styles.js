@@ -14,11 +14,13 @@ const styles = StyleSheet.create({
   },
   appHeaderTextLink: {
     fontSize: 16,
+    fontFamily: 'Georgia, serif',
     color: 'yellow',
     margin: 5
   },
   appHeaderText: {
     fontSize: 16,
+    fontFamily: 'Georgia, serif',
     color: 'white',
     margin: 5
   },
@@ -28,22 +30,26 @@ const styles = StyleSheet.create({
   },
   appIntro: {
     flex: 2,
-    fontSize: 30,
+    fontSize: 20,
+    color: '#666',
+    fontFamily: 'Georgia, serif',
     textAlign: 'center'
   },
-  footer: {
+  appFooter: {
     backgroundColor: '#eaeaea',
     borderTopColor: '#666',
     borderTopWidth: 1,
     justifyContent: 'flex-end',
     alignItems: 'flex-end'
   },
-  footerText: {
+  appFooterText: {
     fontSize: 12,
+    fontFamily: 'Georgia',
     color: '#666'
   },
-  footerTextUrl: {
+  appFooterTextUrl: {
     fontSize: 12,
+    fontFamily: 'Georgia',
     color: '#666'
   },
   images: {
