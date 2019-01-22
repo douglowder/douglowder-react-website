@@ -12,7 +12,7 @@ export default class App extends Component {
         <View style={styles.appBody}>
           <Image
             accessibilityLabel="Douglas Lowder"
-            style={styles.imageHeader}
+            style={{ width: 567, height: 140 }}
             resizeMode="contain"
             source={{
               uri: 'http://www.douglowder.com/images/douglaslowder.png'

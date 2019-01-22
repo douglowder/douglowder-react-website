@@ -9,6 +9,7 @@ body {
 #root {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: 'Georgia', serif;
   background-color: '#eaeaea';
   min-height: 100vh;
