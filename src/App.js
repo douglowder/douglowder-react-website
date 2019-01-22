@@ -12,7 +12,7 @@ export default class App extends Component {
         <View style={styles.appBody}>
           <Image
             accessibilityLabel="Douglas Lowder"
-            style={styles.images}
+            style={styles.imageHeader}
             resizeMode="contain"
             source={{
               uri: 'http://www.douglowder.com/images/douglaslowder.png'
@@ -21,6 +21,22 @@ export default class App extends Component {
           <Text style={styles.appIntro}>
             Mobile app developer and Irish traditional musician
           </Text>
+          <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+            <Image
+              style={styles.imageHomePage}
+              resizeMode="contain"
+              source={{
+                uri: 'http://www.douglowder.com/images/frontpagepic1.jpg'
+              }}
+            />
+            <Image
+              style={styles.imageHomePage}
+              resizeMode="contain"
+              source={{
+                uri: 'http://www.douglowder.com/images/frontpagepic2.jpg'
+              }}
+            />
+          </View>
         </View>
         <Footer />
       </View>

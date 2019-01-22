@@ -1,18 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Georgia', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 #root {
   display: flex;
   flex-direction: column;
+  font-family: 'Georgia', serif;
   background-color: '#eaeaea';
   min-height: 100vh;
   max-height: 100vh;

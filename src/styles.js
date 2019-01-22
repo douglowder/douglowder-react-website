@@ -44,16 +44,26 @@ const styles = StyleSheet.create({
   },
   appFooterText: {
     fontSize: 12,
-    fontFamily: 'Georgia',
+    fontFamily: 'Georgia, serif',
     color: '#666'
   },
   appFooterTextUrl: {
     fontSize: 12,
-    fontFamily: 'Georgia',
+    fontFamily: 'Georgia, serif',
     color: '#666'
   },
-  images: {
-    height: 200
+  imageHeader: {
+    height: 140
+  },
+  imageHomePage: {
+    height: 390,
+    width: 240
+  },
+  imageContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 });
 

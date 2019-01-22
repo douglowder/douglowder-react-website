@@ -7,7 +7,7 @@ export default class Footer extends Component<{}> {
     return (
       <View style={styles.appFooter}>
         <Text styles={styles.appFooterText}>
-          Copyright 2011-2019 Douglas Lowder
+          Copyright © 2011-2019, Doug Lowder, all rights reserved.
         </Text>
         <Text styles={styles.appFooterText}>(510) 928-6373</Text>
         <TouchableOpacity
