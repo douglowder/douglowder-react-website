@@ -21,7 +21,13 @@ export default class App extends Component {
           <Text style={styles.appIntro}>
             Mobile app developer and Irish traditional musician
           </Text>
-          <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              alignItems: 'flex-start'
+            }}
+          >
             <Image
               style={styles.imageHomePage}
               resizeMode="contain"
